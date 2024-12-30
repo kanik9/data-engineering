@@ -8,3 +8,4 @@ tags = {
 source_folder_name="source"
 destination_folder_name="destination"
 subscription_id=""
+adf_name = "terraform-cicd-poc-adf"

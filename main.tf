@@ -26,4 +26,19 @@ module "storage_account" {
   location = var.location
   destination_folder_name = var.destination_folder_name
   source_folder_name = var.source_folder_name
+
+  depends_on = [
+    azurerm_resource_group.rg
+  ]
+}
+
+module "data_factory" {
+  source = "./modules/data_factory/data_factory/"
+  adf_name = var.adf_name
+  resource_group_name = var.resource_group_name
+  storage_account_name = var.name
+
+  depends_on = [
+    module.storage_account
+  ]
 }

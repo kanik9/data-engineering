@@ -32,3 +32,8 @@ variable "source_folder_name" {
   description = "The location/region of the resource group"
   type = string
 }
+
+variable "adf_name" {
+  description = "The name of the Azure Data Factory resource"
+  type = string
+}
