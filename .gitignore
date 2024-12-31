@@ -1,0 +1,7 @@
+# Files
+
+# Modules/Directory
+.idea/
+.vscode/
+/venv/
+
