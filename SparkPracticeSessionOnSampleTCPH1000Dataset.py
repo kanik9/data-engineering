@@ -747,11 +747,11 @@ display(total_revenue_by_region.take(5))
 
 # COMMAND ----------
 
-
+print(spark.conf.get("spark.sql.streaming.checkpointFileManagerClass"))
 
 # COMMAND ----------
 
-
+display(dbutils.fs())
 
 # COMMAND ----------
 
