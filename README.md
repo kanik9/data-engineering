@@ -177,7 +177,6 @@ This is a personal learning repository. If you find any issues or have suggestio
 
 ```
 Pyspark/
-├── README.md                           # This file - overview and quick start
 ├── HowToReadSparkQueryPlans.md        # Complete query plan analysis guide
 ├── spark_configuration_guide.md       # Comprehensive configuration reference  
 ├── HowToReadSparkDAG.md               # DAG analysis guide (future content)
