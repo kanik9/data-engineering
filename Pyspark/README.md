@@ -10,6 +10,7 @@ This folder contains comprehensive guides and resources for learning and masteri
 |------|-------------|-------|
 | [`HowToReadSparkQueryPlans.md`](./HowToReadSparkQueryPlans.md) | **Complete guide to understanding and analyzing Spark query plans** | Beginner to Expert |
 | [`spark_configuration_guide.md`](./spark_configuration_guide.md) | **Comprehensive Spark configuration reference for IADP Lookup Framework** | Intermediate to Advanced |
+| [`MemoryManagement.md`](./MemoryManagement.md) | **Dedicated guide to Spark memory management and optimization** | Intermediate to Advanced |
 | [`HowToReadSparkDAG.md`](./HowToReadSparkDAG.md) | Guide to understanding Spark DAGs *(placeholder for future content)* | Intermediate |
 
 ### 🖼️ Visual Resources
@@ -17,6 +18,14 @@ This folder contains comprehensive guides and resources for learning and masteri
 | File | Description |
 |------|-------------|
 | [`resources/spark_query_plan_flow.png`](./resources/spark_query_plan_flow.png) | Visual diagram of Spark query execution flow |
+| [`resources/memory_management.png`](./resources/memory_management.png) | Comprehensive Spark memory management architecture diagram |
+| [`resources/spark_ui_sample.png`](./resources/spark_ui_sample.png) | Sample Spark UI screenshots for reference |
+
+### 📋 Reference Materials
+
+| File | Description |
+|------|-------------|
+| [`resources/important_links.md`](./resources/important_links.md) | Curated collection of essential Spark learning resources and references |
 
 ## 🎯 Learning Path
 
@@ -30,6 +39,7 @@ Start here if you're new to Spark performance optimization:
 Once you understand the basics:
 - Deep dive into [Physical Plans](./HowToReadSparkQueryPlans.md#3-understanding-physical-plans-🏗️)
 - Study [Catalyst Optimizer](./HowToReadSparkQueryPlans.md#5-catalyst-optimizer-deep-dive-🧠)
+- Master [Memory Management](./MemoryManagement.md) concepts and optimization techniques
 - Explore basic [Spark Configurations](./spark_configuration_guide.md#non-streaming-configurations-batch-processing)
 
 ### 3. **Advanced Level**
@@ -51,6 +61,12 @@ For Spark specialists:
 - **Physical Plan Reading**: Bottom-up approach with real examples
 - **Performance Bottleneck Identification**: Using Spark UI effectively
 - **Optimization Verification**: Confirming Catalyst optimizations work
+
+### Memory Management Mastery 🧠
+- **Executor Memory Architecture**: Understanding storage, execution, and overhead memory
+- **Memory Pressure Detection**: Identifying and resolving OOM errors
+- **Garbage Collection Tuning**: Optimizing GC for Spark workloads
+- **Partition Size Optimization**: Balancing memory usage and parallelism
 
 ### Spark Configuration Mastery ⚙️
 - **Adaptive Query Execution (AQE)**: Runtime query optimization
@@ -180,9 +196,13 @@ Pyspark/
 ├── README.md                           # This file - overview and quick start
 ├── HowToReadSparkQueryPlans.md        # Complete query plan analysis guide
 ├── spark_configuration_guide.md       # Comprehensive configuration reference  
+├── MemoryManagement.md                 # Dedicated memory management guide
 ├── HowToReadSparkDAG.md               # DAG analysis guide (future content)
 └── resources/
-    └── spark_query_plan_flow.png      # Query execution flow diagram
+    ├── spark_query_plan_flow.png      # Query execution flow diagram
+    ├── memory_management.png          # Memory architecture diagram
+    ├── spark_ui_sample.png            # Sample Spark UI screenshots
+    └── important_links.md             # Curated learning resources and links
 ```
 
 ---
