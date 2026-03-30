@@ -1,4 +1,4 @@
-# IADP Lookup Framework - Spark Configuration Guide
+# Spark Configuration Guide
 
 This document provides detailed descriptions for each Spark configuration parameter used in the IADP Lookup Framework, organized by workload type and usage scenarios. It includes configurations for both batch processing and near real-time streaming applications.
 
